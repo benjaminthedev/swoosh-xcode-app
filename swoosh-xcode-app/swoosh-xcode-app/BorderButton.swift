@@ -14,7 +14,7 @@ class BorderButton: UIButton {
     //This is for the white border of the button.
     override func awakeFromNib() {
         super.awakeFromNib()
-        layer.borderWidth = 3.0
+        layer.borderWidth = 2.0
         layer.borderColor = UIColor.white.cgColor
     }
 
