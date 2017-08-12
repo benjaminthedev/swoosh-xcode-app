@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,15 +37,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XpN-oc-6VD" customClass="BorderButton" customModule="swoosh_xcode_app" customModuleProvider="target">
-                                <rect key="frame" x="46" y="586" width="271" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39709974315068491" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                <state key="normal" title="GET STARTED">
-                                    <color key="titleColor" red="0.83920373071709098" green="1" blue="0.89931850932588175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wea-IR-pN0">
                                 <rect key="frame" x="55" y="218" width="265" height="36"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
@@ -57,22 +49,36 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XpN-oc-6VD" customClass="BorderButton" customModule="swoosh_xcode_app" customModuleProvider="target">
+                                <rect key="frame" x="16" y="597" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39709974315068491" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QGE-jx-htS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="GET STARTED">
+                                    <color key="titleColor" red="0.83920373071709098" green="1" blue="0.89931850932588175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Wea-IR-pN0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1NQ-jb-ck0"/>
                             <constraint firstItem="B67-Bt-9TT" firstAttribute="width" secondItem="Wea-IR-pN0" secondAttribute="width" id="2Wa-PF-Xan"/>
-                            <constraint firstAttribute="trailing" secondItem="kRT-4q-Awu" secondAttribute="trailing" id="2dp-qO-pae"/>
                             <constraint firstItem="ZHX-pc-r9c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="AVk-zR-xZf"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kRT-4q-Awu" secondAttribute="bottom" id="MgT-6C-hcb"/>
+                            <constraint firstItem="XpN-oc-6VD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="AnG-yL-bTF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kRT-4q-Awu" secondAttribute="bottom" id="CP5-Tn-K8o"/>
+                            <constraint firstItem="XpN-oc-6VD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HDN-mK-vJ5"/>
+                            <constraint firstItem="kRT-4q-Awu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Kva-6A-jrQ"/>
+                            <constraint firstAttribute="trailing" secondItem="kRT-4q-Awu" secondAttribute="trailing" id="NWK-Hw-QVF"/>
                             <constraint firstItem="B67-Bt-9TT" firstAttribute="top" secondItem="Wea-IR-pN0" secondAttribute="bottom" constant="25" id="PLt-KU-5hd"/>
                             <constraint firstItem="Wz8-Pp-aR1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wrt-I8-Jiu"/>
-                            <constraint firstItem="kRT-4q-Awu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XId-FZ-LVw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XpN-oc-6VD" secondAttribute="bottom" constant="20" id="alJ-bX-n3n"/>
                             <constraint firstItem="B67-Bt-9TT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bBp-Bh-ihI"/>
-                            <constraint firstItem="kRT-4q-Awu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eNE-WE-h8X"/>
                             <constraint firstItem="Wea-IR-pN0" firstAttribute="width" secondItem="Wz8-Pp-aR1" secondAttribute="width" id="giy-rW-77P"/>
                             <constraint firstItem="Wea-IR-pN0" firstAttribute="top" secondItem="Wz8-Pp-aR1" secondAttribute="bottom" id="jLp-cJ-ao6"/>
                             <constraint firstItem="Wz8-Pp-aR1" firstAttribute="top" secondItem="ZHX-pc-r9c" secondAttribute="bottom" constant="85" id="k7Z-LO-LRP"/>
+                            <constraint firstItem="kRT-4q-Awu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nmE-FD-0xj"/>
                             <constraint firstItem="ZHX-pc-r9c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oSP-Zk-8rt"/>
                         </constraints>
                     </view>
