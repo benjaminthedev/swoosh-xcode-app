@@ -14,6 +14,7 @@
 		43988A4D1F38B29B008C55DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43988A4B1F38B29B008C55DC /* LaunchScreen.storyboard */; };
 		43988A581F38B29B008C55DC /* swoosh_xcode_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43988A571F38B29B008C55DC /* swoosh_xcode_appTests.swift */; };
 		43988A631F38B29B008C55DC /* swoosh_xcode_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43988A621F38B29B008C55DC /* swoosh_xcode_appUITests.swift */; };
+		43CC80FD1F399545007050D4 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CC80FC1F399545007050D4 /* BorderButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		43988A5E1F38B29B008C55DC /* swoosh-xcode-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swoosh-xcode-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43988A621F38B29B008C55DC /* swoosh_xcode_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swoosh_xcode_appUITests.swift; sourceTree = "<group>"; };
 		43988A641F38B29B008C55DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43CC80FC1F399545007050D4 /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		43988A411F38B29B008C55DC /* swoosh-xcode-app */ = {
 			isa = PBXGroup;
 			children = (
+				43CC80FB1F3994C6007050D4 /* Views */,
 				43988A421F38B29B008C55DC /* AppDelegate.swift */,
 				43988A441F38B29B008C55DC /* ViewController.swift */,
 				43988A461F38B29B008C55DC /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				43988A641F38B29B008C55DC /* Info.plist */,
 			);
 			path = "swoosh-xcode-appUITests";
+			sourceTree = "<group>";
+		};
+		43CC80FB1F3994C6007050D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43CC80FC1F399545007050D4 /* BorderButton.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 			files = (
 				43988A451F38B29B008C55DC /* ViewController.swift in Sources */,
 				43988A431F38B29B008C55DC /* AppDelegate.swift in Sources */,
+				43CC80FD1F399545007050D4 /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +519,7 @@
 				43988A691F38B29B008C55DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43988A6A1F38B29B008C55DC /* Build configuration list for PBXNativeTarget "swoosh-xcode-appTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +528,7 @@
 				43988A6C1F38B29B008C55DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43988A6D1F38B29B008C55DC /* Build configuration list for PBXNativeTarget "swoosh-xcode-appUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +537,7 @@
 				43988A6F1F38B29B008C55DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
