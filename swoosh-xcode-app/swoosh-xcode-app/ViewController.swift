@@ -18,15 +18,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+        
+    
+    @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue){
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        //New Comments
-        //This is a new comment too
-        
-    }
+    
+    
+ 
 
 
 }
