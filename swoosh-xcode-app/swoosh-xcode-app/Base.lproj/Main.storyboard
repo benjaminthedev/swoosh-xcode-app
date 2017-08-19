@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Heavy</string>
+            <string>Avenir-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swoosh_xcode_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="swoosh_xcode_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -85,19 +91,15 @@
                             <constraint firstAttribute="trailing" secondItem="kRT-4q-Awu" secondAttribute="trailing" id="rWZ-5s-WFZ"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="bgImg" destination="kRT-4q-Awu" id="PkR-D5-ieG"/>
-                        <outlet property="swoosh" destination="ZHX-pc-r9c" id="rSt-fv-axn"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-225" y="137"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="EgS-1l-emg">
             <objects>
-                <viewController id="ZBG-Xq-vkU" sceneMemberID="viewController">
+                <viewController id="ZBG-Xq-vkU" customClass="LeagueVC" customModule="swoosh_xcode_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Sa-Z8-gfZ"/>
                         <viewControllerLayoutGuide type="bottom" id="rjs-rq-6v4"/>
@@ -178,7 +180,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7r9-vA-eYX">
-                                <rect key="frame" x="16" y="10" width="83" height="24"/>
+                                <rect key="frame" x="16" y="30" width="83" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="4Q1-Ej-PiS"/>
                                     <constraint firstAttribute="width" constant="83" id="VWF-zQ-Bhl"/>
@@ -214,10 +216,10 @@
             </objects>
             <point key="canvasLocation" x="814" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="0hi-gx-syb">
             <objects>
-                <viewController id="nOf-Me-QS6" sceneMemberID="viewController">
+                <viewController id="nOf-Me-QS6" customClass="SkillVC" customModule="swoosh_xcode_app" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mtd-Rc-gCd"/>
                         <viewControllerLayoutGuide type="bottom" id="89I-CL-tMW"/>
